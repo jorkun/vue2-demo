@@ -1,6 +1,6 @@
-# work
+# VUE2 + webpack + vue-router + vuex Demo
 
-> A Vue.js project
+> based on vue-cli.
 
 ## Build Setup
 
