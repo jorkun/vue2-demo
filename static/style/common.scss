@@ -1,0 +1,66 @@
+body,html {
+    background: #f9f9f9;
+    box-sizing: border-box;
+    font: normal normal 14px/1.4 '微软雅黑';
+    margin: 0;
+}
+.kk-input {
+    background-color: #fefefe;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 4px;
+    line-height: 41px;
+    height: 40px;
+    font-size: 16px;
+    color: #aaa;
+    vertical-align: top;
+    padding: {
+        left: 8px;
+        right: 8px;
+        top: 2px;
+        bottom: 2px;
+    }
+    &:focus {
+        background-color: #fff;
+        border-color: #aaa;
+        outline: none;
+        color: #555;
+    }
+
+}
+
+.kk-btn {
+    height: 40px;
+    background-color: #fefefe;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    vertical-align: middle;
+    cursor: pointer;
+    padding: 6px 20px;
+    &:focus {
+        outline: none;
+    }
+    &:hover {
+        border: 1px solid #bbb;
+        background-color: #f9f9f9;
+    }
+    &:active {
+        border: 1px solid #aaa;
+        background-color: #eee;
+    }
+    &[disabled] {
+        background-color: #f3f2f2;
+        color: #a9a9a9;
+        opacity: .75;
+        cursor: not-allowed;
+    }
+
+}
+.valid-error-message {
+    color: red;
+    line-height: 1.5;
+    font-size: 12px;
+}
+.mt-0 {
+    margin-top: 0;
+}

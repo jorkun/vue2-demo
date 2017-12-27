@@ -1,0 +1,41 @@
+.sidebar {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 40px;
+    width: 200px;
+    text-align: center;
+    ul {
+        padding-left: 0;
+        margin: auto;
+    }
+    li {
+        cursor: pointer;
+        margin: 0px 25px 10px;
+        list-style: none;
+        a {
+            border-radius: 3px;
+            padding: 10px;
+            width: 150px;
+            display: block;
+            color: #444;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            text-decoration: none;
+            &:hover {
+                color: #fff;
+                background-color: #52ceaa;
+                border-color: #16cea3;
+            }
+            &:active {
+                color: #fff;
+                background-color: #0ab390;
+            }
+        }
+        .router-link-exact-active.router-link-active {
+            background-color: #16d0aa;
+            color: #fff;
+            border-color: #16cea3;
+        }
+    }
+}
