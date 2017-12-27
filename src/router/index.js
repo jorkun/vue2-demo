@@ -13,7 +13,6 @@ export default new Router({
         {
             path: '/',
             name: 'HelloWorld',
-      // component: HelloWorld,
             redirect: 'dashboard'
         }, {
             path: '/dashboard',
@@ -21,7 +20,7 @@ export default new Router({
             component: Dashboard,
             children: [
                 {
-                    path: '/',
+                    path: '/dashboard',
                     name: 'index',
                     component: Index
                 },

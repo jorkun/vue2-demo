@@ -13,6 +13,10 @@
         data () {
             return {
                 links: [{
+                    'name': 'dashboard',
+                    'title': '首页',
+                    'param': {}
+                }, {
                     'name': 'work',
                     'title': '工作平台',
                     'param': {}
