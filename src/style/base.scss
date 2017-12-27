@@ -31,13 +31,12 @@ body,html {
 
 .kk-btn {
     height: 40px;
-    // background-color: #fefefe;
+    background-color: #fefefe;
     border: 1px solid #ccc;
     border-radius: 4px;
     vertical-align: middle;
     cursor: pointer;
     padding: 6px 20px;
-    background: linear-gradient(#fefefe, #f1f1f1);
     &:focus {
         outline: none;
     }
