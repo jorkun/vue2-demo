@@ -1,6 +1,6 @@
 <template>
   <div class="work">
-    <h2 class="mt-0">{{msg}}</h2>
+    <h2 class="mt-0">当前位置：<small>工作平台</small></h2>
     <p>当前状态：{{$store.state.count}}</p>
     <p>
       <em>状态值可以在
@@ -15,7 +15,6 @@
         name: 'Work',
         data () {
             return {
-                msg: '当前页面：工作平台',
                 toLink: {
                     name: 'system',
                     title: '系统管理'

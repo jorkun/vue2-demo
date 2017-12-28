@@ -1,6 +1,6 @@
 <template>
   <div class="study">
-    <h2 class="mt-0">当前页面：学习平台</h2>
+    <h2 class="mt-0">当前位置：<small>学习平台</small></h2>
     <section>
         <h4 class="title">1、数据绑定</h4>
         <label>输入：</label>
