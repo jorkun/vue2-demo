@@ -4,7 +4,8 @@ import Vuex from 'vuex'
 Vue.use(Vuex)
 
 const state = {
-    count: 1
+    count: 1,
+    histories: []
 }
 
 const mutations = {
@@ -13,9 +14,18 @@ const mutations = {
     },
     reduce (state) {
         state.count -= 1
+    },
+    removeHistory () {
+        state.histories = []
+    }
+}
+const actions = {
+    add (state) {
+        state.commit('add')
     }
 }
 export default new Vuex.Store({
     state,
-    mutations
+    mutations,
+    actions
 })
