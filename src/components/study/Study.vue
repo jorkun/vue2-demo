@@ -13,13 +13,13 @@
     </section>
     <section>
         <h4 class="title">2、过滤器</h4>
-        <label class>输入：</label>
+        <label>转大写：</label>
         <input class="kk-input" type="text" v-model="chat" placeholder="请输入小写字母" />
-        <p v-show="chat">转换成大写：{{chat|toUpperCase}}</p>
+        <p>转换结果：{{chat|toUpperCase}}</p>
         <p></p>
-        <label class>输入：</label>
+        <label>问候：</label>
         <input class="kk-input" type="text" v-model="name" placeholder="请输入姓名" />
-        <p v-show="name">问候：{{name|toHello}}</p>
+        <p>转换结果：{{name|toHello}}</p>
     </section>
   </div>
 </template>
@@ -76,5 +76,9 @@
 <style type="scss" scoped>
     p {
         word-break: break-all;
+    }
+    label {
+        width: 8%;
+        display: inline-block;
     }
 </style>

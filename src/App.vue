@@ -18,7 +18,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin: auto;
-  width: 700px;
+  width: 1200px;
   margin-top: 60px;
 }
 .logo-transition {

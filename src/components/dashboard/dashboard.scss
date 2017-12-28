@@ -6,9 +6,10 @@
     }
     .body {
         margin-left: 220px;
-        display: inline-block;
+        display: block;
         height: 100%;
         margin-top: 0;
         padding-left: 15px;
+        overflow: auto;
     }
 }

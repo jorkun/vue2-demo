@@ -48,10 +48,12 @@ body,html {
         border: 1px solid #aaa;
         background-color: #eee;
     }
+    &[disabled]:hover,
     &[disabled] {
         background-color: #f3f2f2;
         background: #f3f2f2;
         color: #a9a9a9;
+        border: 1px solid #ccc;
         opacity: .75;
         cursor: not-allowed;
     }
