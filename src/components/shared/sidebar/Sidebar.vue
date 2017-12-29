@@ -13,19 +13,19 @@
         data () {
             return {
                 links: [{
-                    'name': 'dashboard',
+                    'name': '/dashboard',
                     'title': '首页',
                     'param': {}
                 }, {
-                    'name': 'work',
+                    'name': '/work',
                     'title': '工作状态',
                     'param': {}
                 }, {
-                    'name': 'study',
+                    'name': '/study',
                     'title': '学习平台',
                     'param': {}
                 }, {
-                    'name': 'system',
+                    'name': '/system',
                     'title': '系统管理',
                     'param': {}
                 }]}

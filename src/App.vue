@@ -18,7 +18,7 @@ export default {
         handleShow () {
             setTimeout(() => {
                 this.showIndex = true
-            }, 3000)
+            }, 4000)
         },
         handleCount () {
             let interval = setInterval(() => {
