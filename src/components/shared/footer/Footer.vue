@@ -13,6 +13,7 @@
         height: 35px;
         text-align: center;
         position: absolute;
+        display: block;
         bottom: 0;
         color: #bbb;
         line-height: 35px;

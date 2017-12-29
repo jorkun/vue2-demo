@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div class="banner" v-show="!showIndex">
+    <div class="banner" v-show="!showIndex" >
       <span>{{timeCount}}</span>
     </div>
     <router-view v-show="showIndex"/>
