@@ -4,16 +4,13 @@ import Vuex from 'vuex'
 Vue.use(Vuex)
 
 const state = {
-    count: 1,
+    status: true,
     histories: []
 }
 
 const mutations = {
-    add (state) {
-        state.count += 1
-    },
-    reduce (state) {
-        state.count -= 1
+    switch (s) {
+        state.status = !state.status
     },
     removeHistory () {
         state.histories = []
@@ -24,6 +21,10 @@ const actions = {
         state.commit('add')
     }
 }
+// 状态转换
+Vue.filter('toStatus', v => {
+    return v ? '工作中' : '自由时间'
+})
 export default new Vuex.Store({
     state,
     mutations,

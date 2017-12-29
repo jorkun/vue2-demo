@@ -1,7 +1,7 @@
 <template>
   <div class="work">
-    <h2 class="mt-0">当前位置：<small>工作平台</small></h2>
-    <p>当前状态：{{$store.state.count}}</p>
+    <h2 class="mt-0">当前位置：<small>工作状态</small></h2>
+    <p>当前状态：{{$store.state.status | toStatus}}</p>
     <p>
       <em>状态值可以在
          <router-link v-bind:to="toLink.name">{{ toLink.title }}</router-link>

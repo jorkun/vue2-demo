@@ -15,11 +15,11 @@
         <h4 class="title">2、过滤器</h4>
         <label>转大写：</label>
         <input class="kk-input" type="text" v-model="chat" placeholder="请输入小写字母" />
-        <p>转换结果：{{chat|toUpperCase}}</p>
+        <p><label>转换结果：</label>{{chat|toUpperCase}}</p>
         <p></p>
         <label>问候：</label>
         <input class="kk-input" type="text" v-model="name" placeholder="请输入姓名" />
-        <p>转换结果：{{name|toHello}}</p>
+        <p><label>转换结果：</label>{{name|toHello}}</p>
     </section>
   </div>
 </template>

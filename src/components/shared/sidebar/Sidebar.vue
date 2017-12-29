@@ -18,7 +18,7 @@
                     'param': {}
                 }, {
                     'name': 'work',
-                    'title': '工作平台',
+                    'title': '工作状态',
                     'param': {}
                 }, {
                     'name': 'study',

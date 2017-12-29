@@ -2,7 +2,8 @@
     <header class="header">
         <img class="logo-transition" src="./../../../assets/logo.png">
         <div class="text-box">
-            <span>欢迎进来一起学习。</span>
+            <!-- <span>做一颗健康的种子，破土、发芽、茁壮成长。</span> -->
+            <span>{{$store.state.status|toStatus}}</span>
         </div>
     </header>
 </template>
@@ -42,6 +43,7 @@
         overflow: hidden;
         span {
             position: absolute;
+            margin-left: -500px;
             animation: textScrolling 10s linear 0s infinite;
         }
     }
