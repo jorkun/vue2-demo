@@ -1,21 +1,21 @@
 <template>
     <div class="container">
-        <Header></Header>
+        <kk-header></kk-header>
         <div class="nav">
-            <sidebar></sidebar>
+            <kk-sidebar></kk-sidebar>
         </div>
         <div class="body">
             <router-view></router-view>
         </div>
-        <Footer></Footer>
+        <kk-footer></kk-footer>
     </div>
 </template>
 <script>
-    import Header from '@/components/shared/header/Header'
-    import Sidebar from '@/components/shared/sidebar/Sidebar'
-    import Footer from '@/components/shared/footer/Footer'
+    import kkHeader from '@/components/shared/header/Header'
+    import kkSidebar from '@/components/shared/sidebar/Sidebar'
+    import kkFooter from '@/components/shared/footer/Footer'
     export default {
-        components: {Header, Sidebar, Footer},
+        components: {kkHeader, kkSidebar, kkFooter},
         name: 'Dashboard',
         data () {
             return {

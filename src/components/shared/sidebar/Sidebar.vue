@@ -9,7 +9,7 @@
 </template>
 <script>
     export default {
-        name: 'Sidebar',
+        name: 'kk-sidebar',
         data () {
             return {
                 links: [{

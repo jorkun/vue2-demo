@@ -2,16 +2,21 @@
     <header class="header">
         <img class="logo-transition" src="./../../../assets/logo.png">
         <div class="text-box">
-            <!-- <span>做一颗健康的种子，破土、发芽、茁壮成长。</span> -->
-            <span>{{$store.state.status|toStatus}}</span>
+            <span>做一颗健康的种子，破土、发芽、茁壮成长。</span>
+            <!-- <span>{{$store.state.status|toStatus}}</span> -->
         </div>
+        <Logout></Logout>
     </header>
 </template>
 <script>
     import store from '@/store/store'
+    import Logout from '@/components/logout/Logout'
     export default {
-        name: 'Header',
-        store
+        name: 'kk-header',
+        store,
+        components: {
+            Logout
+        }
     }
 </script>
 <style lang="scss">

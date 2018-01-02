@@ -1,9 +1,10 @@
 <template>
   <div id="app">
-    <div class="banner" v-show="!showIndex" >
-      <span>{{timeCount}}</span>
-    </div>
-    <router-view v-show="showIndex"/>
+    <transition name="fade">
+      <keep-alive>
+        <router-view/>
+      </keep-alive>
+    </transition>
   </div>
 </template>
 
@@ -11,28 +12,28 @@
 export default {
     name: 'app',
     mounted () {
-        this.handleShow()
-        this.handleCount()
+        // this.handleShow()
+        // this.handleCount()
     },
     methods: {
-        handleShow () {
-            setTimeout(() => {
-                this.showIndex = true
-            }, 4000)
-        },
-        handleCount () {
-            let interval = setInterval(() => {
-                this.timeCount--
-                if (this.timeCount === 0) {
-                    clearInterval(interval)
-                }
-            }, 1000)
-        }
+        // handleShow () {
+        //     setTimeout(() => {
+        //         this.showIndex = true
+        //     }, 4000)
+        // },
+        // handleCount () {
+        //     let interval = setInterval(() => {
+        //         this.timeCount--
+        //         if (this.timeCount === 0) {
+        //             clearInterval(interval)
+        //         }
+        //     }, 1000)
+        // }
     },
     data () {
         return {
-            showIndex: false,
-            timeCount: 3
+            // showIndex: false,
+            // timeCount: 3
         }
     }
 }

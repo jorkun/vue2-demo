@@ -7,9 +7,14 @@
   </div>
 </template>
 <script>
-  export default {
-      name: 'Study1'
-  }
+    export default {
+        name: 'Study1',
+        data () {
+            return {
+                value: ''
+            }
+        }
+    }
 </script>
 <style type="scss" scoped>
 </style>

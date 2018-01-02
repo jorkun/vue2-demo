@@ -5,7 +5,7 @@
 </template>
 <script>
     export default {
-        name: 'Footer'
+        name: 'kk-footer'
     }
 </script>
 <style lang="scss" scoped>
