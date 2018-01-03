@@ -4,7 +4,7 @@
         <h2 class="mt-0">VUE 学习</h2>
         <div v-if="!isValid" class="error-msg">账户信息不能为空！</div>
         <div>
-          <input type="text" placeholder="Email" :class="'kk-input log-input' + (account=='' ? ' log-input-empty' : '')" v-model="account">
+          <input type="text" placeholder="Name" :class="'kk-input log-input' + (account=='' ? ' log-input-empty' : '')" v-model="account">
           <input type="password" placeholder="Password" :class="'kk-input log-input' + (password=='' ? ' log-input-empty' : '')" v-model="password">
         </div>
         <a href="javascript:;" class="kk-btn log-btn" v-on:click="login" :disabled="disabledBtn">登陆</a>
